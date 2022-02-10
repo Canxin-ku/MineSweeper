@@ -1,0 +1,762 @@
+<GameWin>:
+    id: main_win
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba:(1.0, 0.98, 0.98, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    BoxLayout:
+        orientation:'vertical'
+        BoxLayout:
+            size_hint_y: .1
+            spacing: 10
+            Label:
+                text: ''
+                size_hint_x: .05
+            Button:
+                id: quit
+                text: '[color=9400D3]<<[/color]'
+                font_size: 35
+                markup: True
+                background_down: ''
+                background_normal: ''
+                background_color:(1.0, 0.98, 0.98, 1)
+                size_hint_x: .1
+                on_release: root.quit_game()
+            Label:
+                text: ''
+                size_hint_x: .5
+            Label:
+                id: time
+                text: '[color=FF0000]00:00[/color]'
+                font_size: 35
+                markup: True
+                size_hint_x: .1
+            Label:
+                text: ''
+                size_hint_x: .05
+
+        Label:
+            id: info
+            text:'[color=00FF00]Please choose \none function below[/color]'
+            markup: True
+            font_size: 30
+            size_hint_y:.1
+        StackLayout:
+            orientation: 'lr-tb'
+            size_hint_y: .8
+            spacing: 2
+            padding:10
+            Button:
+                id: b0
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b1
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b2
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b3
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b4
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b5
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b6
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b7
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b10
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b11
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b12
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b13
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b14
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b15
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b16
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b17
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b20
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b21
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b22
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b23
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b24
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b25
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b26
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b27
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b30
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b31
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b32
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b33
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b34
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b35
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b36
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b37
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b40
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b41
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b42
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b43
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b44
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b45
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b46
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b47
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b50
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b51
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b52
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b53
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b54
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b55
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b56
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b57
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b60
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b61
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b62
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b63
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b64
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b65
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b66
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b67
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b70
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b71
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b72
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b73
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b74
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b75
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b76
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b77
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b80
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b81
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b82
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b83
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b84
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b85
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b86
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b87
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b90
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b91
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b92
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b93
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b94
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b95
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b96
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b97
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b100
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b101
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b102
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b103
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b104
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b105
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b106
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b107
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b110
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b111
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b112
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b113
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b114
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b115
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b116
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+            Button:
+                id: b117
+                text:''
+                width: 40
+                size_hint: .125,.07
+                background_normal: ''
+                background_color: (0.12, 0.56, 1.0,1)
+
+
+
+        BoxLayout:
+            spacing: 20
+            size_hint_y: .05
+            Label:
+                text:''
+                size_hint_x:.1
+            Button:
+                id: tap
+                text: 'Tap'
+                font_size: 30
+                background_normal: ''
+                background_color: (1.0, 0.65, 0.0,1)
+
+            Button:
+                id: flag
+                text: 'Flag'
+                font_size: 30
+                background_normal: ''
+                background_color: (1.0, 0.65, 0.0,1)
+            Button:
+                id: not_sure
+                text: '?'
+                font_size: 30
+                background_normal: ''
+                background_color: (1.0, 0.65, 0.0, 1)
+            Label:
+                text:''
+                size_hint_x:.1
+
+        Label:
+            text:''
+            size_hint_y:.1
+
+
+

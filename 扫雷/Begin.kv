@@ -1,0 +1,64 @@
+<BeginWin>:
+    id: main_win
+    orientation:"vertical"
+    spacing: 10
+    space_x: self.size[0]/4
+    canvas.before:
+        Color:
+            rgba:(1.0, 0.98, 0.8, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'top'
+        size_hint_y: .35
+        BoxLayout:
+            spacing: 50
+            orientation:"vertical"
+            Label:
+                size_hint_y: None
+                height: 40
+            Label:
+                text: "[color=00ffff]F[/color][color=00ff00]M[/color][color=FFD700]I[/color][color=ff4500]N[/color][color=ff00ff]E[/color]"
+                bold: True
+                font_size: 50
+                markup: True
+            Label:
+                text: '[color=8a2be2]Please choose the difficulty[/color]'
+                font_size: 30
+                markup: True
+    Label:
+        size_hint_y: None
+        height: 40
+    BoxLayout:
+        orientation:'vertical'
+        padding: main_win.space_x, 10
+        BoxLayout:
+            height: 200
+            BoxLayout:
+                orientation:"vertical"
+                spacing: 50
+                Button:
+                    text: "Easy"
+                    font_size:35
+                    background_color: (0.24, 0.7, 0.44, 1)
+                    background_normal: ''
+                    on_release: root.easy_game()
+                Button:
+                    text: "Normal"
+                    font_size: 35
+                    background_color: (1.0, 0.84, 0.0, 1)
+                    background_normal: ''
+                    on_release: root.normal_game()
+                Button:
+                    text: "Hard"
+                    font_size: 35
+                    background_color: (0.65, 0.16, 0.16, 1)
+                    background_normal: ''
+                    on_release: root.hard_game()
+        Label:
+            id: sp3
+            size_hint_y: None
+            height: 100
